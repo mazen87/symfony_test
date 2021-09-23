@@ -24,7 +24,7 @@ class BookType extends AbstractType
                 TextType::class,
                 [
                     'label' => false,
-                    'required' => true,
+                    'required' => false,
                     'constraints' => [
                         new Regex([
                             /**
@@ -45,7 +45,7 @@ class BookType extends AbstractType
                 TextType::class,
                 [
                     'label' => false,
-                    'required' => true,
+                    'required' => false,
                     'constraints' => [
                         new Regex([
                             /**
@@ -96,7 +96,7 @@ class BookType extends AbstractType
                     'label' => false,
                     'required'    => false,
                     'attr' => [
-                        'placeholder' => 'Description...',
+                        'placeholder' => 'Summary...',
                         'class'       => 'form-control'
                     ]
                 ]
@@ -106,7 +106,7 @@ class BookType extends AbstractType
                 TextType::class,
                 [
                     'label' => false,
-                    'required' => true,
+                    'required' => false,
                     'attr' => [
                         'placeholder' => 'ISBN..',
                         'class'       => 'form-control'
